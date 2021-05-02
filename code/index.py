@@ -30,7 +30,7 @@ def handler(event, context):
     cur.execute(query)
     connection.commit()
 ## Construct body of the response object
-    
+    logger.error('HI');
     clinicList = []
     rows = cur.fetchall()
     for row in rows:
